@@ -3,10 +3,29 @@
   <head>
     <title>Homepage | TODOS</title>
     <style>
+      li:not(:last-child) {
+        margin-bottom: 12px;
+      }
+
+      li span {
+        display: none;
+        margin-left: 20px;
+        color: red;
+      }
+
       li.done {
         color: green;
         font-weight: bold;
         text-decoration: line-through;
+      }
+
+      li:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
+
+      li:hover span {
+        display: inline;
       }
     </style>
   </head>
